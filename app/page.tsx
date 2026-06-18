@@ -1,5 +1,13 @@
-import { Button } from "@/components/ui/button"
+import { Container, Title, TopBar } from '@/components/shared';
 
 export default function Page() {
-  return <Button>Корзина</Button>
+  return (
+    <>
+      <Container className="mt-7">
+        <Title text="Все пиццы" size="lg" className="font-extrabold" />
+      </Container>
+      <TopBar />
+      <div style={{ height: 3000 }}></div>
+    </>
+  );
 }
